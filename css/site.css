@@ -1,0 +1,122 @@
+:root {
+  --primary-red: #b71c1c;
+  --light-red: #f05545;
+  --dark-red: #7f0000;
+  --primary-gray: #c7c7c7;
+  --light-gray: #eee;
+  --dark-gray: #1b1b1b;
+  --primary-font: 'Noto Sans JP', sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: var(--primary-font);
+  color: var(--dark-gray);
+}
+
+a {
+  color: var(--primary-red);
+  transition: color 0.4s ease-in;
+}
+
+a:hover {
+  color: var(--light-red);
+}
+
+a:visited {
+  color: var(--dark-red);
+}
+
+button {
+  background-color: var(--primary-red);
+  border: 1px solid var(--primary-red);
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px;
+  color: #FFF;
+  cursor: pointer;
+}
+
+p {
+  line-height: 1.2;
+}
+
+.site-title {
+  font-size: 16px;
+  text-align: center;
+}
+
+.story {
+  font-size: 24px;
+  margin-bottom: 4rem;
+}
+
+.story header {
+  padding: 6rem 2rem;
+  text-align: center;
+  background:
+    linear-gradient(
+      rgba(255, 255, 255, 0.75),
+      rgba(255, 255, 255, 0.75)
+    ),
+    url('../images/sakura_blossoms.jpeg') no-repeat center center/cover;
+}
+
+.story h1 {
+  margin: 0;
+}
+
+.story hr {
+  max-width: 700px;
+  margin-top: 1rem;
+  border-top: 1px solid var(--light-gray);
+}
+
+.story .tags {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.story .actions {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+}
+
+.story .content {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+@media (min-width: 700px) {
+  .story .content {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.story .content .translation {
+  color: var(--primary-gray);
+  font-size: 16px;
+  margin-top: -10px;
+  display: none;
+}
+
+.story .content .translation.visible {
+  display: block;
+}
