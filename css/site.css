@@ -173,6 +173,7 @@ footer .content {
 .story header {
   padding: 6rem 2rem;
   text-align: center;
+  background-color: var(--light-gray);
 }
 
 .story h1 {
@@ -254,6 +255,7 @@ footer .content {
   position: relative;
   border-radius: 5px;
   margin-bottom: 1rem;
+  background-color: var(--light-gray);
 }
 
 .story-card:last-child {
@@ -303,6 +305,10 @@ footer .content {
 
   .story-card {
     width: 49%;
+  }
+
+  .story-card:last-child {
+    margin-bottom: 1rem;
   }
 
   .story-card a {
