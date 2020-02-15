@@ -20,6 +20,7 @@ html {
 body {
   font-family: var(--primary-font);
   color: var(--dark-gray);
+  background-color: var(--dark-gray);
 }
 
 a {
@@ -61,10 +62,18 @@ hr {
   border-top: 1px solid var(--light-gray);
 }
 
+header,
+main {
+  background-color: var(--white);
+}
+
+main {
+  padding-bottom: 3rem;
+}
+
 footer {
   background-color: var(--dark-gray);
   color: var(--white);
-  padding-top: 3rem;
   padding-bottom: 3rem;
   margin-top: 3rem;
 }
@@ -80,7 +89,6 @@ footer .content {
   justify-content: space-between;
 }
 
-.site-header,
 .hr-wrapper,
 .tags,
 .actions,
@@ -94,13 +102,13 @@ footer .content {
   padding-right: 1rem;
 }
 
-.site-header {
-  margin-top: 4rem;
-  margin-bottom: 1.5rem;
+.site-header .content {
+  padding-top: 4rem;
+  padding-bottom: 1.5rem;
 }
 
 @media (min-width: 700px) {
-  .site-header {
+  .site-header .content {
     display: flex;
     justify-content: space-between;
   }
@@ -159,7 +167,9 @@ footer .content {
 .page-header h1 {
   font-size: 56px;
   font-weight: 900;
+  margin-top: 0;
   margin-bottom: 1.5rem;
+  padding-top: 1.5rem;
 }
 
 /********************
