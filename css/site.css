@@ -84,7 +84,9 @@ footer .content {
 .hr-wrapper,
 .tags,
 .actions,
-.content {
+.content,
+.page-header,
+.story-cards {
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
@@ -127,6 +129,11 @@ footer .content {
 
 .site-nav a {
   text-decoration: none;
+  color: var(--primary-red);
+}
+
+.site-nav a:hover {
+  color: var(--light-red);
 }
 
 .site-nav ul {
@@ -149,6 +156,16 @@ footer .content {
   }
 }
 
+.page-header h1 {
+  font-size: 56px;
+  font-weight: 900;
+  margin-bottom: 1.5rem;
+}
+
+/********************
+  INDIVIDUAL STORY
+********************/
+
 .story {
   font-size: 24px;
 }
@@ -156,12 +173,6 @@ footer .content {
 .story header {
   padding: 6rem 2rem;
   text-align: center;
-  background:
-    linear-gradient(
-      rgba(255, 255, 255, 0.75),
-      rgba(255, 255, 255, 0.75)
-    ),
-    url('../images/sakura_blossoms.jpeg') no-repeat center center/cover;
 }
 
 .story h1 {
@@ -191,4 +202,111 @@ footer .content {
 
 .story .content .translation.visible {
   display: block;
+}
+
+/********************
+  FILTERS
+********************/
+.filters {
+  margin-bottom: 1.5rem;
+}
+
+.filters h2 {
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.filters .tags {
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.filters .tags .tag {
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.filters .tags .tag.active button {
+  background-color: var(--primary-red);
+  color: var(--white);
+}
+
+.filters .tags .tag.active button:hover {
+  background-color: var(--light-red);
+}
+
+/********************
+  STORY CARDS
+********************/
+.story-cards {
+  list-style-type: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.story-card {
+  text-align: center;
+  min-height: 200px;
+  position: relative;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.story-card:last-child {
+  margin-bottom: 0;
+}
+
+.story-card a {
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+  color: var(--dark-gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.story-card a:hover {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.story-card h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-weight: 900;
+}
+
+.story-card .tags {
+  margin-top: 0;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+@media (min-width: 700px) {
+  .story-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .story-card {
+    width: 49%;
+  }
+
+  .story-card a {
+    position: relative;
+  }
+
 }
