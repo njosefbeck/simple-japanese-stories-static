@@ -206,8 +206,7 @@ footer .content {
 
 .story .content .translation {
   color: var(--primary-gray);
-  font-size: 16px;
-  margin-top: -20px;
+  margin-top: -10px;
   display: none;
 }
 
