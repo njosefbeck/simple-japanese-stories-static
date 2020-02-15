@@ -1,0 +1,39 @@
+@media print {
+  .site-header {
+    margin: 0;
+  }
+
+  .site-title {
+    text-align: center;
+  }
+
+  .site-nav {
+    display: none;
+  }
+
+  .story header {
+    padding: 2rem 0 1rem;
+  }
+
+  .story h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+
+  .actions {
+    display: none;
+  }
+
+  .tags {
+    display: none;
+  }
+
+  footer {
+    padding: 0;
+    margin: 0;
+  }
+
+  footer .content .right {
+    display: none;
+  }
+}

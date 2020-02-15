@@ -9,10 +9,20 @@
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,700&display=swap&subset=japanese" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/site.css">
+  <link rel="stylesheet" href="css/print.css">
+  <script src="https://kit.fontawesome.com/2f73316679.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header>
+  <header class="site-header">
     <h1 class="site-title">Simple Japanese Stories</h1>
+    <nav class="site-nav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Stories</a></li>
+        <li><a href="#"><i class="fas fa-search"></i></a></li>
+      </ul>
+    </nav>
   </header>
   <main>
     <!-- The story post -->
@@ -24,8 +34,9 @@
       </header>
       <section class="actions">
         <button id="js-toggle-english">Show English</button>
+        <a href="#"><button><i class="fab fa-twitter"></i> Tweet</button></a>
       </section>
-      <hr />
+      <div class="hr-wrapper"><hr/></div>
       <section class="content">
         <p>
           みゆき<span role="image" aria-label="girl">👩🏻</span>は１６さいの<ruby>女<rp>(</rp><rt>おんな</rt><rp>)</rp></ruby>の<ruby>子<rp>(</rp><rt>こ</rt><rp>)</rp></ruby>です。
@@ -90,15 +101,25 @@
           She had fallen from her bike.
         </p>
       </section>
-      <hr/>
-      <div class="tags">
-        <span class="tag"><a href="#">N4</a>, </span>
-        <span class="tag"><a href="#">Easy</a></span>
-      </div>
     </article>
+    <div class="hr-wrapper"><hr/></div>
+    <div class="tags">
+      Tags: 
+      <span class="tag"><a href="#">N4</a>, </span>
+      <span class="tag"><a href="#">Easy</a></span>
+    </div>
   </main>
   <footer>
-
+    <div class="content">
+      <div class="left">
+        &copy; 2019 Blunt Japanese Woman
+      </div>
+      <div class="right">
+        <a href="https://twitter.com/simplejapanese" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </div>
+    </div>
   </footer>
   <script src="./js/site.js"></script>
 </body>
